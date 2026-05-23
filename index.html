@@ -27,11 +27,11 @@
         --text: #1a1a1a;
         --muted: #888;
         --ig-border: #dbdbdb;
-        --card-w: 380px;
+        --card-w: min(380px, 95vw);
       }
       /* make the whole card scrollable on slide 3 */
       .slide#slide3 {
-        max-height: 55vh;
+        max-height: 45vh;
         overflow-y: auto;
         -webkit-overflow-scrolling: touch;
         scroll-behavior: smooth;
@@ -53,7 +53,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        overflow: hidden;
+        overflow-x: hidden;
       }
       body::before {
         content: "";
